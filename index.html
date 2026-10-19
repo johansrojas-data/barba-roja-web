@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barba Roja Disco-Bar · Rooftop | Madrid, Cundinamarca</title>
+  <meta name="description" content="Barba Roja Disco-Bar / Rooftop: rumba en 3 ambientes en Madrid, Cundinamarca. Pub, Disco-Bar Crossover y Rooftop. Consulta la carta y reserva por WhatsApp.">
+  <meta name="theme-color" content="#0a0708">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Barba Roja Disco-Bar · Rooftop">
+  <meta property="og:description" content="Rumba en 3 ambientes: Pub, Disco-Bar Crossover y Rooftop. #tulugarfavorito">
+  <!-- Al publicar, cambia esta ruta por la dirección completa, ej: https://barbaroja.com.co/img/compartir.jpg -->
+  <meta property="og:image" content="img/compartir.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CO">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Ficha del negocio para Google (aparece en búsquedas y mapas) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NightClub",
+    "name": "Barba Roja Disco-Bar · Rooftop",
+    "description": "Rumba en 3 ambientes: Pub, Disco-Bar Crossover y Rooftop.",
+    "image": "img/compartir.jpg",
+    "logo": "img/logo.png",
+    "telephone": "+57 310 302 0223",
+    "priceRange": "$$",
+    "servesCuisine": "Bar",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cl. 23 #12-50, Mz 1 Int 14 Casa 20, La Pincha",
+      "addressLocality": "Madrid",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 4.7345364, "longitude": -74.2662946 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "18:00", "closes": "02:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/barbarojadiscobar/",
+      "https://www.threads.com/@barbarojadiscobar"
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== CABECERA ===================== -->
+  <header class="cabecera" id="cabecera">
+    <a href="#inicio" class="marca" aria-label="Barba Roja, ir al inicio">
+      <img src="img/logo.png" alt="" class="marca__logo" onerror="this.remove()">
+      <span class="marca__texto">Barba<b>Roja</b></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#experiencia">Experiencia</a>
+      <a href="#videos">Videos</a>
+      <a href="#carta">Carta</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#reservas" class="btn btn--rojo nav__cta">Reservar</a>
+    </nav>
+
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===================== INICIO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__fondo foto" data-foto="img/portada.jpg" aria-hidden="true"></div>
+      <!-- Video de fondo: sin sonido y en bucle; si no carga, queda el fondo de arriba -->
+      <video class="hero__video" src="videos/portada-fiesta.mp4" autoplay muted loop playsinline preload="auto"
+             aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+      <div class="hero__luces" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
+
+      <div class="hero__contenido">
+        <img src="img/logo.png" alt="Logo de Barba Roja" class="hero__logo" width="200" height="200" onerror="this.remove()">
+        <p class="eyebrow">Madrid · Cundinamarca</p>
+        <h1 class="hero__titulo">
+          <span>Barba</span>
+          <span class="rojo">Roja</span>
+        </h1>
+        <p class="hero__sub">Disco-Bar <span class="punto">·</span> Rooftop</p>
+        <p class="hero__lema">Un lugar hecho para ti. <strong>Rumba en 3 ambientes.</strong></p>
+
+        <div class="hero__botones">
+          <a href="#carta" class="btn btn--rojo">Ver la carta</a>
+          <a href="#reservas" class="btn btn--oro">Reservar mesa</a>
+          <a href="#eventos" class="btn btn--linea">Eventos</a>
+        </div>
+        <p class="estado" id="estadoHero"></p>
+        <p class="hashtag">#tulugarfavorito</p>
+      </div>
+
+      <a href="#experiencia" class="hero__bajar" aria-label="Bajar a la experiencia"></a>
+    </section>
+
+    <!-- Cinta animada -->
+    <div class="cinta" aria-hidden="true">
+      <div class="cinta__pista">
+        <span>Pub</span><i>✦</i><span>Disco-Bar Crossover</span><i>✦</i><span>Rooftop</span><i>✦</i><span>Terraza urbana</span><i>✦</i><span>DJ</span><i>✦</i><span>Cócteles</span><i>✦</i><span>#tulugarfavorito</span><i>✦</i>
+        <span>Pub</span><i>✦</i><span>Disco-Bar Crossover</span><i>✦</i><span>Rooftop</span><i>✦</i><span>Terraza urbana</span><i>✦</i><span>DJ</span><i>✦</i><span>Cócteles</span><i>✦</i><span>#tulugarfavorito</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section class="seccion" id="experiencia">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <p class="eyebrow">Nuestra experiencia</p>
+          <h2>Tres pisos, <span class="rojo">una sola noche</span></h2>
+          <p class="seccion__intro">Empieza tranquilo en el pub, sube a bailar crossover y termina viendo el cielo desde la terraza.</p>
+        </header>
+
+        <div class="pisos">
+          <article class="piso revelar">
+            <div class="piso__foto foto" data-foto="img/piso1.jpg"><span class="piso__num">01</span></div>
+            <div class="piso__info">
+              <p class="piso__nivel">Piso 1</p>
+              <h3>Pub</h3>
+              <p>Cerveza fría, buena charla y el punto de encuentro para arrancar la noche.</p>
+            </div>
+          </article>
+
+          <article class="piso revelar">
+            <div class="piso__foto foto" data-foto="img/piso2.jpg"><span class="piso__num">02</span></div>
+            <div class="piso__info">
+              <p class="piso__nivel">Piso 2</p>
+              <h3>Disco-Bar Crossover</h3>
+              <p>La pista principal. Crossover y urbano con DJ para bailar hasta el final.</p>
+            </div>
+          </article>
+
+          <article class="piso revelar">
+            <div class="piso__foto foto" data-foto="img/piso3.jpg"><span class="piso__num">03</span></div>
+            <div class="piso__info">
+              <p class="piso__nivel">Piso 3</p>
+              <h3>Rooftop · Terraza Urbana</h3>
+              <p>Aire libre, cócteles y la mejor vista de la rumba en Madrid.</p>
+            </div>
+          </article>
+        </div>
+
+        <ul class="etiquetas revelar" aria-label="Lo que encuentras">
+          <li>Crossover</li><li>Urbano</li><li>DJ</li><li>Tardeo</li><li>Cócteles</li><li>Terraza</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== VIDEOS ===================== -->
+    <section class="seccion seccion--videos" id="videos">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <p class="eyebrow">Así se vive</p>
+          <h2>Tu noche <span class="rojo">empieza aquí</span></h2>
+          <p class="seccion__intro">De «otra noche sin planes» a la mejor rumba de Madrid. Toca el parlante para escuchar.</p>
+        </header>
+
+        <div class="reels">
+          <figure class="reel revelar">
+            <div class="reel__marco">
+              <video src="videos/historia-1-sin-planes.mp4#t=0.1" muted loop playsinline preload="metadata"
+                     aria-label="Video 1: ¿Otra noche sin planes?"></video>
+              <span class="reel__paso" aria-hidden="true">1</span>
+              <div class="reel__progreso" aria-hidden="true"><span></span></div>
+              <button class="reel__sonido" type="button" aria-label="Activar sonido" aria-pressed="false">🔇</button>
+            </div>
+            <figcaption><strong>¿Otra noche sin planes?</strong><small>Todos pasamos por ahí…</small></figcaption>
+          </figure>
+
+          <figure class="reel revelar">
+            <div class="reel__marco">
+              <video src="videos/historia-2-el-plan.mp4#t=0.1" muted loop playsinline preload="metadata"
+                     aria-label="Video 2: tus amigos por fin organizan el plan"></video>
+              <span class="reel__paso" aria-hidden="true">2</span>
+              <div class="reel__progreso" aria-hidden="true"><span></span></div>
+              <button class="reel__sonido" type="button" aria-label="Activar sonido" aria-pressed="false">🔇</button>
+            </div>
+            <figcaption><strong>Por fin hay plan</strong><small>El parche se organiza</small></figcaption>
+          </figure>
+
+          <figure class="reel revelar">
+            <div class="reel__marco">
+              <video src="videos/historia-3-barba-roja.mp4#t=0.1" muted loop playsinline preload="metadata"
+                     aria-label="Video 3: la noche en Barba Roja"></video>
+              <span class="reel__paso" aria-hidden="true">3</span>
+              <div class="reel__progreso" aria-hidden="true"><span></span></div>
+              <button class="reel__sonido" type="button" aria-label="Activar sonido" aria-pressed="false">🔇</button>
+            </div>
+            <figcaption><strong>Y la noche es en Barba Roja</strong><small>#tulugarfavorito</small></figcaption>
+          </figure>
+        </div>
+
+        <div class="reels__cta revelar">
+          <a href="#reservas" class="btn btn--rojo">Reserva tu mesa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CARTA ===================== -->
+    <section class="seccion seccion--carta" id="carta">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <p class="eyebrow">La carta</p>
+          <h2>¿Qué vas a <span class="rojo">tomar</span>?</h2>
+        </header>
+
+        <div class="carta revelar">
+          <div class="carta__tabs" role="tablist" id="cartaTabs" aria-label="Categorías de la carta"></div>
+          <div class="carta__panel" id="cartaPanel" role="tabpanel" aria-live="polite"></div>
+          <p class="carta__nota" id="cartaNota"></p>
+          <p class="carta__legal">Precios en pesos colombianos, sujetos a cambios sin previo aviso.
+            <a href="#" id="cartaOriginal" target="_blank" rel="noopener">Ver carta original</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTOS ===================== -->
+    <section class="seccion" id="eventos">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <p class="eyebrow">Eventos</p>
+          <h2>Lo que <span class="rojo">se viene</span></h2>
+        </header>
+        <div class="eventos" id="listaEventos"></div>
+      </div>
+    </section>
+
+    <!-- ===================== RESERVAS ===================== -->
+    <section class="seccion seccion--reservas" id="reservas">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <p class="eyebrow">Reservas y contrataciones</p>
+          <h2>Separa tu <span class="rojo">mesa</span></h2>
+          <p class="seccion__intro">Completa tu solicitud en menos de un minuto. Con estos datos el equipo prepara todo antes de que llegues.</p>
+        </header>
+
+        <div class="reservas">
+          <aside class="reservas__info revelar">
+            <h3>Cómo funciona</h3>
+            <ol class="como">
+              <li><strong>Completa la solicitud</strong><span>Tipo de reserva, fecha, personas y lo que necesitas.</span></li>
+              <li><strong>Envíala por WhatsApp</strong><span>El mensaje sale listo y con tu código de reserva.</span></li>
+              <li><strong>Recibe la confirmación</strong><span>El equipo revisa la disponibilidad y te responde por el mismo chat.</span></li>
+              <li><strong>Llega y disfruta</strong><span>Tu mesa te estará esperando.</span></li>
+            </ol>
+            <p class="reservas__horario" id="reservaHorario"></p>
+            <a href="#" class="reservas__pregunta" data-wa="consulta">¿Solo tienes una pregunta? Escríbenos directo <span aria-hidden="true">→</span></a>
+          </aside>
+
+          <form class="asistente revelar" id="asistente" novalidate>
+            <ol class="progreso" id="progreso" aria-hidden="true">
+              <li>Tipo</li><li>Fecha</li><li>Detalles</li><li>Contacto</li><li>Confirmar</li>
+            </ol>
+            <p class="solo-lectores" id="pasoAnuncio" aria-live="polite"></p>
+
+            <!-- Paso 1 · Tipo -->
+            <fieldset class="paso" data-paso="1">
+              <legend tabindex="-1">¿Qué quieres reservar?</legend>
+              <div class="tipos">
+                <label class="tipo">
+                  <input type="radio" name="tipo" value="mesa">
+                  <span class="tipo__icono" aria-hidden="true">🍾</span>
+                  <span class="tipo__texto"><strong>Mesa</strong><small>Para salir con tu parche</small></span>
+                </label>
+                <label class="tipo">
+                  <input type="radio" name="tipo" value="cumple">
+                  <span class="tipo__icono" aria-hidden="true">🎂</span>
+                  <span class="tipo__texto"><strong>Cumpleaños</strong><small>Celebra en tu lugar favorito</small></span>
+                </label>
+                <label class="tipo">
+                  <input type="radio" name="tipo" value="privado">
+                  <span class="tipo__icono" aria-hidden="true">🎉</span>
+                  <span class="tipo__texto"><strong>Evento privado</strong><small>Empresas, grados y grupos grandes</small></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Paso 2 · Fecha y personas -->
+            <fieldset class="paso" data-paso="2" hidden>
+              <legend tabindex="-1">¿Cuándo y cuántos?</legend>
+
+              <div class="campo" id="campoNoches">
+                <span class="campo__titulo">Elige la noche</span>
+                <div class="noches" id="noches" role="radiogroup" aria-label="Próximas noches"></div>
+              </div>
+              <label class="campo" id="campoFecha">Fecha
+                <input type="date" name="fecha">
+              </label>
+              <p class="ayuda" id="ayudaFecha"></p>
+
+              <div class="agotado" id="avisoAgotado" hidden>
+                <span class="agotado__icono" aria-hidden="true">🚫</span>
+                <div>
+                  <strong>Esa noche ya no tenemos reservas disponibles.</strong>
+                  <p>Elige otra fecha o únete a la lista de espera: si se libera una mesa, te escribimos.</p>
+                  <a href="#" class="btn btn--linea" id="btnEspera" target="_blank" rel="noopener">Unirme a la lista de espera</a>
+                </div>
+              </div>
+
+              <div class="fila-2">
+                <label class="campo">Hora de llegada
+                  <select name="hora"></select>
+                </label>
+                <div class="campo">
+                  <span class="campo__titulo" id="lblPersonas">Personas</span>
+                  <div class="contador" role="group" aria-labelledby="lblPersonas">
+                    <button type="button" data-paso-cant="-1" aria-label="Una persona menos">−</button>
+                    <input type="number" name="personas" value="4" min="1" max="150" inputmode="numeric" aria-labelledby="lblPersonas">
+                    <button type="button" data-paso-cant="1" aria-label="Una persona más">+</button>
+                  </div>
+                </div>
+              </div>
+              <p class="ayuda" id="ayudaPersonas"></p>
+
+              <div class="campo">
+                <span class="campo__titulo">Zona preferida</span>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="piso" value="Sin preferencia" checked><span>Sin preferencia</span></label>
+                  <label class="chip"><input type="radio" name="piso" value="Piso 1 · Pub" data-zona="Pub"><span>Pub<em class="chip__estado"></em></span></label>
+                  <label class="chip"><input type="radio" name="piso" value="Piso 2 · Crossover" data-zona="Crossover"><span>Crossover<em class="chip__estado"></em></span></label>
+                  <label class="chip"><input type="radio" name="piso" value="Piso 3 · Rooftop" data-zona="Rooftop"><span>Rooftop<em class="chip__estado"></em></span></label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Paso 3 · Detalles -->
+            <fieldset class="paso" data-paso="3" hidden>
+              <legend tabindex="-1">Detalles para tenerlo todo listo</legend>
+
+              <div class="solo-cumple">
+                <label class="campo">¿Quién cumple años?
+                  <input type="text" name="cumpleanero" placeholder="Nombre del cumpleañero(a)">
+                </label>
+                <div class="campo">
+                  <span class="campo__titulo">¿Traerán torta?</span>
+                  <div class="chips">
+                    <label class="chip"><input type="radio" name="torta" value="Sí"><span>Sí</span></label>
+                    <label class="chip"><input type="radio" name="torta" value="No" checked><span>No</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="solo-privado">
+                <div class="fila-2">
+                  <label class="campo">Tipo de evento
+                    <select name="tipoEvento">
+                      <option>Empresarial</option>
+                      <option>Grado</option>
+                      <option>Despedida</option>
+                      <option>Aniversario</option>
+                      <option>Otro</option>
+                    </select>
+                  </label>
+                  <label class="campo">Espacio que buscas
+                    <select name="espacio">
+                      <option>Una zona con mesas</option>
+                      <option>Un piso completo</option>
+                      <option>Todo el lugar</option>
+                      <option>Aún no sé</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <div class="pedido">
+                <span class="campo__titulo">Pre-orden para tu mesa <span class="opcional">(opcional)</span></span>
+                <p class="ayuda">Deja pedidas tus botellas o combos y los tendremos listos cuando llegues.</p>
+                <div class="pedido__agregar">
+                  <select id="selPedido" aria-label="Producto de la carta"><option value="">Elige un producto…</option></select>
+                  <div class="contador contador--mini" role="group" aria-label="Cantidad">
+                    <button type="button" data-cant-pedido="-1" aria-label="Menos">−</button>
+                    <input type="number" name="cantidad" value="1" min="1" max="20" inputmode="numeric" aria-label="Cantidad">
+                    <button type="button" data-cant-pedido="1" aria-label="Más">+</button>
+                  </div>
+                  <button type="button" class="btn btn--oro" id="btnAgregar">Agregar</button>
+                </div>
+                <ul class="orden" id="orden" aria-live="polite"></ul>
+                <p class="orden__total" id="ordenTotal" hidden></p>
+              </div>
+
+              <label class="campo">Solicitudes especiales <span class="opcional">(opcional)</span>
+                <textarea name="comentarios" rows="3" placeholder="Ej: mesa cerca a la pista, llegamos en dos grupos, alguien con movilidad reducida…"></textarea>
+              </label>
+            </fieldset>
+
+            <!-- Paso 4 · Contacto -->
+            <fieldset class="paso" data-paso="4" hidden>
+              <legend tabindex="-1">¿A nombre de quién?</legend>
+              <label class="campo">Nombre completo
+                <input type="text" name="nombre" autocomplete="name" placeholder="Como aparece en tu cédula">
+              </label>
+              <label class="campo">Celular (WhatsApp)
+                <input type="tel" name="celular" autocomplete="tel-national" inputmode="numeric" placeholder="300 123 4567">
+              </label>
+              <label class="check">
+                <input type="checkbox" name="mayor">
+                <span>Confirmo que soy mayor de edad.</span>
+              </label>
+            </fieldset>
+
+            <!-- Paso 5 · Resumen -->
+            <div class="paso" data-paso="5" hidden>
+              <h3 class="paso__titulo" tabindex="-1">Revisa tu solicitud</h3>
+              <div class="resumen" id="resumen"></div>
+              <div class="condiciones" id="condiciones" hidden>
+                <h4>Condiciones de reserva</h4>
+                <ul id="listaCondiciones"></ul>
+                <label class="check">
+                  <input type="checkbox" name="acepto">
+                  <span>Leí y acepto las condiciones de reserva.</span>
+                </label>
+              </div>
+              <p class="aviso">Tu reserva queda <strong>confirmada</strong> cuando el equipo te responda por WhatsApp.</p>
+            </div>
+
+            <!-- Paso 6 · Enviada -->
+            <div class="paso paso--listo" data-paso="6" hidden>
+              <div class="listo__icono" aria-hidden="true">✓</div>
+              <h3 class="paso__titulo" tabindex="-1">¡Solicitud lista!</h3>
+              <p>Tu código de reserva es <strong class="codigo" id="codigoFinal"></strong>.</p>
+              <p class="ayuda">Envía el mensaje que se abrió en WhatsApp. Si no se abrió, usa este botón:</p>
+              <div class="listo__botones">
+                <a href="#" class="btn btn--rojo btn--wa" id="btnReabrir" target="_blank" rel="noopener">Abrir WhatsApp</a>
+                <button type="button" class="btn btn--linea" id="btnNueva">Hacer otra reserva</button>
+              </div>
+            </div>
+
+            <p class="asistente__error" id="asistenteError" role="alert"></p>
+            <div class="asistente__nav" id="asistenteNav">
+              <button type="button" class="btn btn--linea" id="btnAtras">Atrás</button>
+              <button type="submit" class="btn btn--rojo" id="btnSiguiente">Continuar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== UBICACIÓN ===================== -->
+    <section class="seccion" id="ubicacion">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <p class="eyebrow">Ubicación y horarios</p>
+          <h2>Ven a <span class="rojo">vernos</span></h2>
+        </header>
+
+        <div class="ubicacion revelar">
+          <div class="ubicacion__datos">
+            <div class="dato">
+              <h3>Dirección</h3>
+              <p id="direccion"></p>
+            </div>
+            <div class="dato">
+              <h3>Horario <span class="estado estado--mini" id="estadoUbicacion"></span></h3>
+              <div id="horarios"></div>
+            </div>
+            <div class="ubicacion__botones">
+              <a href="#" class="btn btn--rojo" id="btnLlegar" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.7 11.3 12.7 2.3a1 1 0 0 0-1.4 0l-9 9a1 1 0 0 0 0 1.4l9 9a1 1 0 0 0 1.4 0l9-9a1 1 0 0 0 0-1.4zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                Cómo llegar
+              </a>
+              <a href="#" class="btn btn--linea" id="btnWaze" target="_blank" rel="noopener">Waze</a>
+              <a href="#" class="btn btn--linea" id="btnMaps" target="_blank" rel="noopener">Ver en Google Maps</a>
+            </div>
+            <figure class="fachada" id="fachada" hidden>
+              <div class="fachada__foto foto" data-foto="img/fachada.jpg"></div>
+              <figcaption>Así se ve la entrada</figcaption>
+            </figure>
+          </div>
+          <div class="ubicacion__mapa" id="mapa"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REDES ===================== -->
+    <section class="seccion seccion--redes" id="redes">
+      <div class="contenedor revelar">
+        <p class="eyebrow">Síguenos</p>
+        <h2>@barbarojadiscobar</h2>
+        <p class="seccion__intro">Fiestas, artistas y promociones: todo se anuncia primero en Instagram.</p>
+        <div class="redes" id="redes-lista"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE ===================== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <img src="img/logo.png" alt="" class="pie__logo" width="200" height="200" loading="lazy" onerror="this.remove()">
+      <p class="marca__texto marca__texto--pie">Barba<b>Roja</b></p>
+      <p>Disco-Bar · Rooftop · Madrid, Cundinamarca</p>
+      <p class="pie__legal">Prohíbase el expendio de bebidas embriagantes a menores de edad.
+        El exceso de alcohol es perjudicial para la salud. Ley 124 de 1994.</p>
+      <p class="pie__copy">© <span id="anio"></span> Barba Roja Disco-Bar</p>
+    </div>
+  </footer>
+
+  <!-- Barra de acciones (solo celular) -->
+  <nav class="barra-movil" aria-label="Accesos rápidos">
+    <a href="#carta">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10l-1 7a4 4 0 0 1-3 3.9V20h3v2H8v-2h3v-7.1A4 4 0 0 1 8 9L7 2zm2.3 2 .6 4.5a2 2 0 0 0 4.2 0l.6-4.5H9.3z"/></svg>
+      Carta
+    </a>
+    <a href="#reservas" class="barra-movil__principal">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.5 1.8 6.4L3 29l7.2-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm5.9 15.3c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      Reservar
+    </a>
+    <a href="#" id="barraLlegar" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+      Cómo llegar
+    </a>
+  </nav>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-flotante" data-wa="consulta" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.3.6 4.5 1.8 6.4L3 29l7.2-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.3 1.1 1.1-4.1-.3-.4a10.4 10.4 0 0 1-1.6-5.5C5.2 9.8 10 5.1 16 5.1s10.8 4.7 10.8 10.5S21.9 26.1 16 26.1zm5.9-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="js/datos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
