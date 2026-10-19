@@ -1,5 +1,7 @@
 # Barba Roja Disco-Bar · Rooftop — Sitio web (versión 1)
 
+🌐 **Ver la página funcionando:** https://johansrojas-data.github.io/barba-roja-web/
+
 Página web oficial de **Barba Roja Disco-Bar / Rooftop** (Madrid, Cundinamarca). Es la primera versión del proyecto: un sitio estático, sin servidor ni base de datos.
 
 ## Cómo verla
